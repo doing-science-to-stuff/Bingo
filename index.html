@@ -1,0 +1,175 @@
+<html>
+<head>
+<style>
+.grid {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  background-color: rgba(255, 0, 0, 0.8);
+  padding: 10px;
+}
+.bingo {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 10px;
+  text-align: center;
+  font-size: 60px;
+  vertical-align: middle;
+}
+.item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 10px;
+  vertical-align: middle;
+}
+.name {
+  font-size: 30px;
+  text-align: center;
+  vertical-align: middle;
+  min-height: 80px;
+}
+a:link {
+  color: black;
+  text-decoration: none;
+}
+a:visited {
+  color: black;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+h1 {
+    font-size: 60px;
+    text-align: center;
+}
+</style>
+</head>
+
+<body>
+<h1>Cognitive Bias Bingo</h1>
+<div class="grid">
+    <div class="bingo" id="titleB">B</div>
+    <div class="bingo" id="titleI">I</div>
+    <div class="bingo" id="titleN">N</div>
+    <div class="bingo" id="titleG">G</div>
+    <div class="bingo" id="titleO">O</div>
+    <div class="item" id="cell0"><a href="" id="link0"><div class="name" id="div0">1</div></a></div>
+    <div class="item" id="cell1"><a href="" id="link1"><div class="name" id="div1">1</div></a></div>
+    <div class="item" id="cell2"><a href="" id="link2"><div class="name" id="div2">1</div></a></div>
+    <div class="item" id="cell3"><a href="" id="link3"><div class="name" id="div3">1</div></a></div>
+    <div class="item" id="cell4"><a href="" id="link4"><div class="name" id="div4">1</div></a></div>
+    <div class="item" id="cell5"><a href="" id="link5"><div class="name" id="div5">1</div></a></div>
+    <div class="item" id="cell6"><a href="" id="link6"><div class="name" id="div6">1</div></a></div>
+    <div class="item" id="cell7"><a href="" id="link7"><div class="name" id="div7">1</div></a></div>
+    <div class="item" id="cell8"><a href="" id="link8"><div class="name" id="div8">1</div></a></div>
+    <div class="item" id="cell9"><a href="" id="link9"><div class="name" id="div9">1</div></a></div>
+    <div class="item" id="cell10"><a href="" id="link10"><div class="name" id="div10">1</div></a></div>
+    <div class="item" id="cell11"><a href="" id="link11"><div class="name" id="div11">1</div></a></div>
+    <div class="item" id="cell12"><a href="" id="link12"><div class="name" id="div12">1</div></a></div>
+    <div class="item" id="cell13"><a href="" id="link13"><div class="name" id="div13">1</div></a></div>
+    <div class="item" id="cell14"><a href="" id="link14"><div class="name" id="div14">1</div></a></div>
+    <div class="item" id="cell15"><a href="" id="link15"><div class="name" id="div15">1</div></a></div>
+    <div class="item" id="cell16"><a href="" id="link16"><div class="name" id="div16">1</div></a></div>
+    <div class="item" id="cell17"><a href="" id="link17"><div class="name" id="div17">1</div></a></div>
+    <div class="item" id="cell18"><a href="" id="link18"><div class="name" id="div18">1</div></a></div>
+    <div class="item" id="cell19"><a href="" id="link19"><div class="name" id="div19">1</div></a></div>
+    <div class="item" id="cell20"><a href="" id="link20"><div class="name" id="div20">1</div></a></div>
+    <div class="item" id="cell21"><a href="" id="link21"><div class="name" id="div21">1</div></a></div>
+    <div class="item" id="cell22"><a href="" id="link22"><div class="name" id="div22">1</div></a></div>
+    <div class="item" id="cell23"><a href="" id="link23"><div class="name" id="div23">1</div></a></div>
+    <div class="item" id="cell24"><a href="" id="link24"><div class="name" id="div24">1</div></a></div>
+</div>
+
+<input id="randButton" value="Randomize" onclick="randomize()" type="button">
+<input id="rulesButton" value="Show Rules" onclick="document.getElementById('rules').style.visibility = 'visible';" type="button">
+<input id="printButton" value="Print" onclick="window.print();return false;" type="button">
+<div id="rules">
+<H2>How to play:</H2>
+<ol>
+<li>Click randomize to generate a board.
+<li>Print the board.
+<li>Whenever you spot a particular cognitive bias on social media, mark your board and post a photo in a reply.
+</ol>
+<input id="hideButton" value="Hide Rules" onclick="document.getElementById('rules').style.visibility = 'hidden';" type="button">
+</div>
+<script type="text/javascript"><!--
+
+var values = [["Anchoring", "https://yourbias.is/anchoring"],
+              ["The Sunk Cost Fallacy", "https://yourbias.is/the-sunk-cost-fallacy"],
+              ["The Availability Heuristic", "https://yourbias.is/the-availability-heuristic"],
+              ["The Curse of Knowledge", "https://yourbias.is/the-curse-of-knowledge"],
+              ["Confirmation Bias", "https://yourbias.is/confirmation-bias"],
+              ["The Dunning-Kruger Effect", "https://yourbias.is/the-dunning-kruger-effect"],
+              ["Belief Bias", "https://yourbias.is/belief-bias"],
+              ["Self Serving Bias", "https://yourbias.is/self-serving-bias"],
+              ["The Backfire Effect", "https://yourbias.is/the-backfire-effect"],
+              ["The Barnum Effect", "https://yourbias.is/the-barnum-effect"],
+              ["Groupthink", "https://yourbias.is/groupthink"],
+              ["Negativity Bias", "https://yourbias.is/negativity-bias"],
+              ["Free", "https://yourbias.is/"],
+              ["Declinism", "https://yourbias.is/declinism"],
+              ["The Framing Effect", "https://yourbias.is/the-framing-effect"],
+              ["Fundamental Attribution Error", "https://yourbias.is/fundamental-attribution-error"],
+              ["The Halo Effect", "https://yourbias.is/the-halo-effect"],
+              ["Optimism Bias", "https://yourbias.is/optimism-bias"],
+              ["Pessimism Bias", "https://yourbias.is/pessimism-bias"],
+              ["Just World Hypothesis", "https://yourbias.is/just-world-hypothesis"],
+              ["In Group Bias", "https://yourbias.is/in-group-bias"],
+              ["The Placebo Effect", "https://yourbias.is/the-placebo-effect"],
+              ["The Bystander Effect", "https://yourbias.is/the-bystander-effect"],
+              ["Reactance", "https://yourbias.is/reactance"],
+              ["The Spotlight Effect", "https://yourbias.is/the-spotlight-effect"]];
+
+function update() {
+    var i;
+    for (i = 0; i < values.length; i++) {
+        var cell = document.getElementById("div"+i);
+        cell.firstChild.nodeValue = values[i][0];
+        //cell.style.height = cell.offsetWidth+'px';
+        var link = document.getElementById("link"+i);
+        link.href = values[i][1];
+    }
+}
+
+function randomize() {
+    //alert('randomize called');
+    var num = values.length;
+    var middle = Math.floor(values.length/2);
+
+    for(i=0; i<(5*num); i++) {
+        var src = Math.floor(Math.random() * num);
+        var dst = Math.floor(Math.random() * num);
+
+        if( src!=middle && dst!=middle) {
+            var tmp = values[src];
+            values[src] = values[dst];
+            values[dst] = tmp;
+        }
+    }
+
+    update();
+}
+
+var ruleVis = 'hidden';
+window.onbeforeprint = function() {
+    ruleVis = document.getElementById("rules").style.visibility;
+    document.getElementById("randButton").style.visibility = "hidden";
+    document.getElementById("rulesButton").style.visibility = "hidden";
+    document.getElementById("printButton").style.visibility = "hidden";
+    document.getElementById("hideButton").style.visibility = "hidden";
+};
+window.onafterprint = function() {
+    document.getElementById("randButton").style.visibility = "visible";
+    document.getElementById("rulesButton").style.visibility = "visible";
+    document.getElementById("printButton").style.visibility = "visible";
+    document.getElementById("hideButton").style.visibility = ruleVis;
+};
+
+randomize();
+update();
+
+document.getElementById("rules").style.visibility = "hidden";
+
+//--></script>
+</body>
+</html>
