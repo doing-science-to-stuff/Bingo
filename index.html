@@ -88,7 +88,8 @@ h1 {
 <ol>
 <li>Click randomize to generate a board.
 <li>Print the board.
-<li>Whenever you spot a particular cognitive bias on social media, mark your board and post a photo in a reply.
+<li>Whenever you spot a particular cognitive bias on social media, mark your board.
+<li>Post a photo of your board in a reply.
 </ol>
 <input id="hideButton" value="Hide Rules" onclick="document.getElementById('rules').style.visibility = 'hidden';" type="button">
 </div>
@@ -125,14 +126,12 @@ function update() {
     for (i = 0; i < values.length; i++) {
         var cell = document.getElementById("div"+i);
         cell.firstChild.nodeValue = values[i][0];
-        //cell.style.height = cell.offsetWidth+'px';
         var link = document.getElementById("link"+i);
         link.href = values[i][1];
     }
 }
 
 function randomize() {
-    //alert('randomize called');
     var num = values.length;
     var middle = Math.floor(values.length/2);
 
