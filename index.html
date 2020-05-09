@@ -39,14 +39,27 @@ a:hover {
   text-decoration: underline;
 }
 h1 {
-    font-size: 60px;
-    text-align: center;
+  font-size: 60px;
+  text-align: left;
+}
+h3 {
+  vertical-align: bottom;
+  text-align: left;
+}
+.qr {
+  position:absolute;
+  top:0;
+  right:0;
 }
 </style>
 </head>
 
 <body>
+<div style="min-height: 120px">
 <h1>Cognitive Bias Bingo</h1>
+<h3><a href="http://www.cognitive-bias-bingo.com/">http://www.cognitive-bias-bingo.com/</a></h3>
+</div>
+<div class="qr"><img src="cognitive-bias-bingo_com.png" width=150 height=150></div>
 <div class="grid">
     <div class="bingo" id="titleB">B</div>
     <div class="bingo" id="titleI">I</div>
@@ -80,18 +93,17 @@ h1 {
     <div class="item" id="cell24"><a href="" id="link24"><div class="name" id="div24">1</div></a></div>
 </div>
 
-<input id="randButton" value="Randomize" onclick="randomize()" type="button">
-<input id="rulesButton" value="Show Rules" onclick="document.getElementById('rules').style.visibility = 'visible';" type="button">
+<input id="randButton" value="Randomize" onclick="randomize();" type="button">
+<input id="rulesButton" value="Show Rules" onclick="showRules();" type="button">
 <input id="printButton" value="Print" onclick="window.print();return false;" type="button">
 <div id="rules">
-<H2>How to play:</H2>
+<H3>How to play:</H3>
 <ol>
 <li>Click randomize to generate a board.
 <li>Print the board.
 <li>Whenever you spot a particular cognitive bias on social media, mark your board.
 <li>Post a photo of your board in a reply.
 </ol>
-<input id="hideButton" value="Hide Rules" onclick="document.getElementById('rules').style.visibility = 'hidden';" type="button">
 </div>
 <script type="text/javascript"><!--
 
@@ -149,25 +161,35 @@ function randomize() {
     update();
 }
 
-var ruleVis = 'hidden';
+function showRules() {
+    var ruleVis = document.getElementById("rules").style.visibility;
+    var rulesText = document.getElementById("rulesButton").value;
+    if( ruleVis == "hidden" ) {
+        ruleVis = "visible";
+        rulesText = "Hide Rules";
+    } else {
+        ruleVis = "hidden";
+        rulesText = "Show Rules";
+    }
+    document.getElementById("rules").style.visibility = ruleVis;
+    document.getElementById("rulesButton").value = rulesText;
+}
+
+document.getElementById("rules").style.visibility = "hidden";
 window.onbeforeprint = function() {
-    ruleVis = document.getElementById("rules").style.visibility;
     document.getElementById("randButton").style.visibility = "hidden";
     document.getElementById("rulesButton").style.visibility = "hidden";
     document.getElementById("printButton").style.visibility = "hidden";
-    document.getElementById("hideButton").style.visibility = "hidden";
 };
 window.onafterprint = function() {
     document.getElementById("randButton").style.visibility = "visible";
     document.getElementById("rulesButton").style.visibility = "visible";
     document.getElementById("printButton").style.visibility = "visible";
-    document.getElementById("hideButton").style.visibility = ruleVis;
 };
+
 
 randomize();
 update();
-
-document.getElementById("rules").style.visibility = "hidden";
 
 //--></script>
 </body>
