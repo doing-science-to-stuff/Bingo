@@ -1,6 +1,6 @@
 # Bingo Card Generators
 
-These bingo card generators [were](https://doingsciencetostuff.wordpress.com/2020/05/09/cognitive-bias-bingo/) [created](https://doingsciencetostuff.wordpress.com/2020/05/14/logical-fallacy-bingo/) [to](FlawedReasoning/) help people
+These bingo card generators [were](https://doingsciencetostuff.wordpress.com/2020/05/09/cognitive-bias-bingo/) [created](https://doingsciencetostuff.wordpress.com/2020/05/14/logical-fallacy-bingo/) [to](https://blog.doingsciencetostuff.com/2021/08/01/flawed-reasoning-bingo/) help people
 better understand the psychological principles that contribute to people
 holding false beliefs.
 
