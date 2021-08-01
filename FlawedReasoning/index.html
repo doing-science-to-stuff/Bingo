@@ -1,0 +1,234 @@
+<!-- (C) Copyright 2020, DoingScienceToStuff.com, All Rights Reserves -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Flawed Reasoning Bingo</title>
+<meta property="og:image" content="https://doing-science-to-stuff.github.io/Bingo/FlawedReasoning/example.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="800">
+<meta property="og:image:height" content="758">
+<style>
+.grid {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  background-color: rgba(93, 63, 211, 0.8);
+  padding: 10px;
+}
+.bingo {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 10px;
+  text-align: center;
+  font-size: 60px;
+  vertical-align: middle;
+}
+.item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 10px;
+  vertical-align: middle;
+}
+.name {
+  font-size: 30px;
+  text-align: center;
+  vertical-align: middle;
+  min-height: 80px;
+}
+a:link {
+  color: black;
+  text-decoration: none;
+}
+a:visited {
+  color: black;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+h1 {
+  font-size: 60px;
+  text-align: left;
+}
+h3 {
+  vertical-align: bottom;
+  text-align: left;
+}
+.qr {
+  position:absolute;
+  top:0;
+  right:0;
+}
+</style>
+</head>
+
+<body>
+<div style="min-height: 120px">
+<h1>Flawed Reasoning Bingo</h1>
+<h3><a href="http://www.flawed-reasoning-bingo.com/">http://www.flawed-reasoning-bingo.com/</a></h3>
+</div>
+<div class="qr"><a href="http://www.flawed-reasoning-bingo.com/"><img alt="QR Code" src="data:image/png;base64,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" width=150 height=150></a></div>
+<div class="grid">
+    <div class="bingo" id="titleB">B</div>
+    <div class="bingo" id="titleI">I</div>
+    <div class="bingo" id="titleN">N</div>
+    <div class="bingo" id="titleG">G</div>
+    <div class="bingo" id="titleO">O</div>
+    <div class="item" id="cell0"><a href="" id="link0"><div class="name" id="div0">1</div></a></div>
+    <div class="item" id="cell1"><a href="" id="link1"><div class="name" id="div1">1</div></a></div>
+    <div class="item" id="cell2"><a href="" id="link2"><div class="name" id="div2">1</div></a></div>
+    <div class="item" id="cell3"><a href="" id="link3"><div class="name" id="div3">1</div></a></div>
+    <div class="item" id="cell4"><a href="" id="link4"><div class="name" id="div4">1</div></a></div>
+    <div class="item" id="cell5"><a href="" id="link5"><div class="name" id="div5">1</div></a></div>
+    <div class="item" id="cell6"><a href="" id="link6"><div class="name" id="div6">1</div></a></div>
+    <div class="item" id="cell7"><a href="" id="link7"><div class="name" id="div7">1</div></a></div>
+    <div class="item" id="cell8"><a href="" id="link8"><div class="name" id="div8">1</div></a></div>
+    <div class="item" id="cell9"><a href="" id="link9"><div class="name" id="div9">1</div></a></div>
+    <div class="item" id="cell10"><a href="" id="link10"><div class="name" id="div10">1</div></a></div>
+    <div class="item" id="cell11"><a href="" id="link11"><div class="name" id="div11">1</div></a></div>
+    <div class="item" id="cell12"><a href="" id="link12"><div class="name" id="div12">1</div></a></div>
+    <div class="item" id="cell13"><a href="" id="link13"><div class="name" id="div13">1</div></a></div>
+    <div class="item" id="cell14"><a href="" id="link14"><div class="name" id="div14">1</div></a></div>
+    <div class="item" id="cell15"><a href="" id="link15"><div class="name" id="div15">1</div></a></div>
+    <div class="item" id="cell16"><a href="" id="link16"><div class="name" id="div16">1</div></a></div>
+    <div class="item" id="cell17"><a href="" id="link17"><div class="name" id="div17">1</div></a></div>
+    <div class="item" id="cell18"><a href="" id="link18"><div class="name" id="div18">1</div></a></div>
+    <div class="item" id="cell19"><a href="" id="link19"><div class="name" id="div19">1</div></a></div>
+    <div class="item" id="cell20"><a href="" id="link20"><div class="name" id="div20">1</div></a></div>
+    <div class="item" id="cell21"><a href="" id="link21"><div class="name" id="div21">1</div></a></div>
+    <div class="item" id="cell22"><a href="" id="link22"><div class="name" id="div22">1</div></a></div>
+    <div class="item" id="cell23"><a href="" id="link23"><div class="name" id="div23">1</div></a></div>
+    <div class="item" id="cell24"><a href="" id="link24"><div class="name" id="div24">1</div></a></div>
+</div>
+
+<input id="randButton" value="Randomize" onclick="randomize();" type="button">
+<input id="rulesButton" value="Show Rules" onclick="showRules();" type="button">
+<input id="printButton" value="Print" onclick="window.print();return false;" type="button">
+<div id="rules">
+<H3>How to play:</H3>
+<ol>
+<li>Click randomize to generate a board.
+<li>Print the board.
+<li>Whenever you spot a particular type of flawed reasoning on social media, mark your board.
+<li>Post a photo of your board in a reply.
+</ol>
+</div>
+<script><!--
+
+var values = [["Anchoring", "https://yourbias.is/anchoring"],
+              ["The Sunk Cost Fallacy", "https://yourbias.is/the-sunk-cost-fallacy"],
+              ["The Availability Heuristic", "https://yourbias.is/the-availability-heuristic"],
+              ["The Curse of Knowledge", "https://yourbias.is/the-curse-of-knowledge"],
+              ["Confirmation Bias", "https://yourbias.is/confirmation-bias"],
+              ["The Dunning-Kruger Effect", "https://yourbias.is/the-dunning-kruger-effect"],
+              ["Belief Bias", "https://yourbias.is/belief-bias"],
+              ["Self Serving Bias", "https://yourbias.is/self-serving-bias"],
+              ["The Backfire Effect", "https://yourbias.is/the-backfire-effect"],
+              ["The Barnum Effect", "https://yourbias.is/the-barnum-effect"],
+              ["Groupthink", "https://yourbias.is/groupthink"],
+              ["Negativity Bias", "https://yourbias.is/negativity-bias"],
+              ["Free", "https://yourlogicalfallacyis.com/"],
+              ["Declinism", "https://yourbias.is/declinism"],
+              ["The Framing Effect", "https://yourbias.is/the-framing-effect"],
+              ["Fundamental Attribution Error", "https://yourbias.is/fundamental-attribution-error"],
+              ["The Halo Effect", "https://yourbias.is/the-halo-effect"],
+              ["Optimism Bias", "https://yourbias.is/optimism-bias"],
+              ["Pessimism Bias", "https://yourbias.is/pessimism-bias"],
+              ["Just World Hypothesis", "https://yourbias.is/just-world-hypothesis"],
+              ["In Group Bias", "https://yourbias.is/in-group-bias"],
+              ["The Placebo Effect", "https://yourbias.is/the-placebo-effect"],
+              ["The Bystander Effect", "https://yourbias.is/the-bystander-effect"],
+              ["Reactance", "https://yourbias.is/reactance"],
+              ["The Spotlight Effect", "https://yourbias.is/the-spotlight-effect"],
+              ["Strawman", "https://yourlogicalfallacyis.com/strawman"],
+              ["False Cause", "https://yourlogicalfallacyis.com/false-cause"],
+              ["Appeal to Emotion", "https://yourlogicalfallacyis.com/appeal-to-emotion"],
+              ["The Fallacy Fallacy", "https://yourlogicalfallacyis.com/the-fallacy-fallacy"],
+              ["Slippery Slope", "https://yourlogicalfallacyis.com/slippery-slope"],
+              ["ad hominem", "https://yourlogicalfallacyis.com/ad-hominem"],
+              ["The Texas Sharpshooter", "https://yourlogicalfallacyis.com/the-texas-sharpshooter"],
+              ["Personal Incredulity", "https://yourlogicalfallacyis.com/personal-incredulity"],
+              ["Special Pleading", "https://yourlogicalfallacyis.com/special-pleading"],
+              ["Loaded Question", "https://yourlogicalfallacyis.com/loaded-question"],
+              ["Burden of Proof", "https://yourlogicalfallacyis.com/burden-of-proof"],
+              ["Ambiguity", "https://yourlogicalfallacyis.com/ambiguity"],
+              ["The Gamblers Fallacy", "https://yourlogicalfallacyis.com/the-gamblers-fallacy"],
+              ["Bandwagon", "https://yourlogicalfallacyis.com/bandwagon"],
+              ["Appeal to Authority", "https://yourlogicalfallacyis.com/appeal-to-authority"],
+              ["Composition Division", "https://yourlogicalfallacyis.com/composition-division"],
+              ["No True Scotsman", "https://yourlogicalfallacyis.com/no-true-scotsman"],
+              ["Genetic", "https://yourlogicalfallacyis.com/genetic"],
+              ["Black or White", "https://yourlogicalfallacyis.com/black-or-white"],
+              ["Begging the Question", "https://yourlogicalfallacyis.com/begging-the-question"],
+              ["Appeal to Nature", "https://yourlogicalfallacyis.com/appeal-to-nature"],
+              ["Anecdotal", "https://yourlogicalfallacyis.com/anecdotal"],
+              ["The Texas Sharpshooter", "https://yourlogicalfallacyis.com/the-texas-sharpshooter"],
+              ["Middle Ground", "https://yourlogicalfallacyis.com/middle-ground"],
+              ["Free", "https://yourlogicalfallacyis.com/"],
+              ["Free", "https://yourbias.is/"]];
+
+function update() {
+    var i;
+    for (i = 0; i < 25; i++) {
+        var cell = document.getElementById("div"+i);
+        cell.firstChild.nodeValue = values[i][0];
+        var link = document.getElementById("link"+i);
+        link.href = values[i][1];
+    }
+}
+
+function randomize() {
+    var num = values.length-2;
+    var middle = 12;
+
+    for(i=0; i<25; i++) {
+        var src = Math.floor(Math.random() * num);
+        var dst = i;
+
+        if( dst != middle && src != middle ) {
+            var tmp = values[src];
+            values[src] = values[dst];
+            values[dst] = tmp;
+        }
+    }
+
+    values[middle] = values[num];
+    if( Math.random() < 0.5 ) {
+        values[middle] = values[num+1];
+    }
+
+    update();
+}
+
+function showRules() {
+    var ruleVis = document.getElementById("rules").style.visibility;
+    var rulesText = document.getElementById("rulesButton").value;
+    if( ruleVis == "hidden" ) {
+        ruleVis = "visible";
+        rulesText = "Hide Rules";
+    } else {
+        ruleVis = "hidden";
+        rulesText = "Show Rules";
+    }
+    document.getElementById("rules").style.visibility = ruleVis;
+    document.getElementById("rulesButton").value = rulesText;
+}
+
+document.getElementById("rules").style.visibility = "hidden";
+window.onbeforeprint = function() {
+    document.getElementById("randButton").style.visibility = "hidden";
+    document.getElementById("rulesButton").style.visibility = "hidden";
+    document.getElementById("printButton").style.visibility = "hidden";
+};
+window.onafterprint = function() {
+    document.getElementById("randButton").style.visibility = "visible";
+    document.getElementById("rulesButton").style.visibility = "visible";
+    document.getElementById("printButton").style.visibility = "visible";
+};
+
+
+randomize();
+update();
+
+//--></script>
+</body>
+</html>
