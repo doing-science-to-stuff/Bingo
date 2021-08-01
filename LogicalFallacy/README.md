@@ -1,3 +1,3 @@
 This directory contains the source for the Logical Fallacy Bingo generator.
 
-To use the generator, go to: [https://doing-science-to-stuff.github.io/Bingo/LogicalFallacy/](https://doing-science-to-stuff.github.io/Bingo/LogicalFallacy/)
+To use this bingo generator, go to: [http://logical-fallacy-bingo.com/](http://logical-fallacy-bingo.com/)
